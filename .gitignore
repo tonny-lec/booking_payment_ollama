@@ -1,2 +1,5 @@
 /tools/
 .envrc
+proxy.log
+/.venv/**
+anthropic_keepalive_proxy.py
