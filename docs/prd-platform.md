@@ -13,7 +13,7 @@ status: "proposed"   # proposed | approved | archived
 
 ## 2. Scope（In / Out）
 ### In
-- IAM（認証/認可）・Booking・Payment・Notification・Audit・（任意で）Ledger
+- IAM（認証/認可）・Booking・Payment・Notification・Audit・Ledger
 - 契約ファースト（OpenAPI）と互換性維持の方針
 - Observability（logs/metrics/traces）と SLO/SLI
 - timeout / retry / idempotency を設計に含める
@@ -33,9 +33,9 @@ status: "proposed"   # proposed | approved | archived
 
 ## 4. Architecture & Data Flow（要旨）
 - DDD（Bounded Context）+ Hexagonal（Ports/Adapters）
-- 主なBC：IAM / Booking / Payment / Notification / Audit /（任意）Ledger
+- 主なBC：IAM / Booking / Payment / Notification / Audit / Ledger
 - API: OpenAPI → 実装 → 契約テスト（後続で強化）
-- イベント（任意）：at-least-once + dedup（重複排除）を設計
+- イベント：at-least-once + dedup（重複排除）を設計
 
 ## 5. 実装スライス（粒度：MVP → 拡張）
 ### Slice A（最小MVP：まず動く価値）

@@ -20,17 +20,17 @@ status: "draft"
 
 ## Data
 - PostgreSQL（RDB。履歴・監査・整合性を学べる）
-- Redis（任意：キャッシュ/レート制限/分散ロック）
+- Redis（キャッシュ/レート制限/分散ロック）
 
-## Messaging（任意）
-- Kafka / RabbitMQ / NATS（どれか1つを選ぶ）
+## Messaging
+- Kafka 
 - at-least-once を前提に dedup（重複排除）を設計
 
 ## Infra / Delivery（最小）
 - Docker（ローカル/CI）
 - Kubernetes（基礎：Pod/Deployment/Service/Ingress）
 - CI: GitHub Actions
-- IaC: Terraform（任意）
+- IaC: Terraform
 
 ## Architectural Constraints
 - DDD（Bounded Context / Aggregate / Domain Event）

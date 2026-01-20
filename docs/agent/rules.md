@@ -133,3 +133,24 @@ docs: <タスクの要約>
 
 ## System Fix（更新先）
 - 重要失敗は Postmortem を作り、**この rules.md を更新**してから修正する。
+
+## Creating branches for feature tasks
+
+When working on a new feature, create a branch prefixed with `feature/`. This ensures isolation of your changes from the main code base and makes it easier to review and merge once the feature is complete.
+
+1. Start on the latest main branch:
+   ```bash
+   git checkout main
+   git pull
+   ```
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes locally and push when ready:
+   ```bash
+   git push -u origin feature/your-feature-name
+   ```
+4. Create a pull request against `main` once the feature is finished.
+
+By following this convention, the team can keep work organized and simplify code reviews.

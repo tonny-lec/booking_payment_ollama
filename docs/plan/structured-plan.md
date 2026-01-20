@@ -55,3 +55,20 @@ status: "draft"
 - Context Independent: YES
 - 編集：`docs/test/test-plan.md`
 - 検証：境界/冪等/権限/互換性が含まれる
+
+## Slice A: Docs Completion
+
+### Task A1：IAM OpenAPI & Usecase
+- Context Independent: YES
+- 編集：`docs/api/openapi/iam.yaml`, `docs/design/usecases/iam-login.md`
+- 検証：paths が定義されている、Evidence 見出しがある
+
+### Task A2：Booking OpenAPI & Usecase
+- Context Independent: YES
+- 編集：`docs/api/openapi/booking.yaml`, `docs/design/usecases/booking-create.md`
+- 検証：paths が定義されている、Evidence 見出しがある
+
+### Task A3：Payment OpenAPI & Usecase
+- Context Independent: YES
+- 編集：`docs/api/openapi/payment.yaml`, `docs/design/usecases/payment-create.md`
+- 検証：paths が定義されている、Evidence 見出しがある
