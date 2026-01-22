@@ -1,6 +1,6 @@
 ---
 doc_type: "usecase"
-id: "payment-uc-01"
+id: "payment-uc-02"
 bounded_context: "Payment"
 related_features: []
 related_skills: []
@@ -32,6 +32,10 @@ Paymentコンテキストの支払い作成機能は、ユーザーがサービ�
 ## 出力（Event）
 - `PaymentCreatedEvent`: 支払い作成成功時
   - パラメータ: paymentId, userId, amount, currency, orderId, status, timestamp
+- `PaymentProcessedEvent`: 支払い処理完了時
+  - パラメータ: paymentId, status, transactionId, processedAt
+- `PaymentFailedEvent`: 支払い失敗時
+  - パラメータ: paymentId, status, errorMessage, failedAt
 
 # 5. ドメインモデル（集約/不変条件）
 - **PaymentAggregate**: 支払いの作成、処理、キャンセルを管理

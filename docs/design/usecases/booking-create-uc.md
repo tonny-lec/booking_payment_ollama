@@ -1,6 +1,6 @@
 ---
 doc_type: "usecase"
-id: "booking-uc-01"
+id: "booking-uc-02"
 bounded_context: "Booking"
 related_features: []
 related_skills: []
@@ -32,6 +32,8 @@ Bookingコンテキストの予約作成機能は、ユーザーがサービス�
 ## 出力（Event）
 - `BookingCreatedEvent`: 予約作成成功時
   - パラメータ: bookingId, userId, resourceId, startTime, endTime, status
+- `ConflictDetectedEvent`: 衝突検出時
+  - パラメータ: bookingId, resourceId, startTime, endTime, conflictDetails
 
 # 5. ドメインモデル（集約/不変条件）
 - **BookingAggregate**: 予約の作成、変更、キャンセルを管理
