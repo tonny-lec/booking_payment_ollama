@@ -14,7 +14,8 @@ status: "stable"
 ## 1) PRD-First（North Star）
 1. PRDを作る/更新する（`docs/prd-platform.md` 等）
 2. 人間が確認し、`status: approved` に変更
-3. 承認後に計画（Structured Plan）へ進む
+3. 承認後に設計ドキュメントを完了させる（コンテキスト設計、ユースケース設計、OpenAPI仕様）
+4. 設計完了後に計画（Structured Plan）へ進む
 
 ## 2) Context Efficiency（Modular Thinking）
 - 不要な知識を読み込まない

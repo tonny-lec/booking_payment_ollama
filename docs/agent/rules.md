@@ -16,6 +16,7 @@ status: "stable"
 5. **No Secrets / No PII**：Secrets/PIIを出力・埋め込みしない（SSOT：`docs/security/pii-policy.md`）
 6. **Git Flow**：ブランチ運用ルールを遵守する（下記参照）
 7. **One Task, One PR**：細分化されたタスク単位でブランチを作成しPRを出す（下記参照）
+8. **Design-Before-Implementation**：設計ドキュメント（コンテキスト設計、ユースケース設計、OpenAPI仕様）が完了するまで実装は行わない
 
 ## Must Not（禁止）
 - SSOTを無視してコードだけ変更
