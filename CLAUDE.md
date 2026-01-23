@@ -57,6 +57,18 @@ This repository is a **DDD (Domain-Driven Design) Agent Pack** for building a bo
 4. Never push directly to main
 5. Use descriptive commit messages with type (feat, fix, docs, etc.)
 
+### Pull Request Rules
+1. All changes must have an approved PRD (`docs/prd-platform.md` status: approved)
+2. All changes must include evidence (differences, logs, measurements, specifications)
+3. Changes must be minimal and verifiable
+4. All tests must pass (no exceptions)
+5. No secrets or PII should be included in logs, traces, or outputs
+6. Design documentation (context design, use case design, OpenAPI specs) must be completed before implementation
+7. For OpenAPI specifications, each endpoint should be in a separate PR
+8. PR titles must follow the format: `docs: <task summary>`
+9. All PRs must reference the task ID (e.g., `IAM-CTX-01`)
+10. After completing a task, update the status in `docs/tasks/by-feature.md`
+
 ### Standard Commands
 
 #### PRD Approval Gate
