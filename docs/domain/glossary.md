@@ -1,8 +1,8 @@
 ---
 doc_type: "glossary"
-id: "glossary-01"
-version: "0.1"
-last_updated: "2026-01-21"
+id: "glossary-02"
+version: "0.2"
+last_updated: "2026-01-22"
 status: "draft"
 ---
 
